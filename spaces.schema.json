@@ -59,6 +59,9 @@
           ]
         }
       },
+      "logo": {
+        "type": "string"
+      },
       "images": {
         "type": "array",
         "items": {
@@ -87,6 +90,7 @@
       "phone",
       "description",
       "links",
+      "logo",
       "images"
     ]
   }
