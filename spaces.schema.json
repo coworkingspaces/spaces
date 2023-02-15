@@ -1,101 +1,105 @@
 {
+  "title": "Co-working spaces list",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "name": {
-        "type": "string"
-      },
-      "id": {
-        "type": "string"
-      },
-      "address": {
-        "type": "string"
-      },
-      "location": {
-        "type": "object",
-        "properties": {
-          "lat": {
-            "type": "number",
-            "minimum": -90,
-            "maximum": 90
+  "type": "object",
+  "required": ["spaces"],
+  "additionalProperties": false,
+  "properties": {
+    "spaces": {
+      "type": "array",
+      "minLength": 1,
+      "items": { "$ref": "#/definitions/space" }
+    }
+  },
+  "definitions": {
+    "space": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "lat": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "lon": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
           },
-          "lon": {
-            "type": "number",
-            "minimum": -180,
-            "maximum": 180
+          "required": ["lat", "lon"]
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri-template"
+              }
+            },
+            "required": ["name", "url"]
           }
         },
-        "required": [
-          "lat",
-          "lon"
-        ]
-      },
-      "email": {
-        "type": "string",
-        "format": "email"
-      },
-      "phone": {
-        "type": "string"
-      },
-      "description": {
-        "type": "string"
-      },
-      "links": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
+        "logo": {
+          "type": "string",
+          "format": "uri-template"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri-template"
+              },
+              "alt": {
+                "type": "string"
+              }
             },
-            "url": {
-              "type": "string",
-              "format": "uri-template"
-            }
-          },
-          "required": [
-            "name",
-            "url"
-          ]
+            "required": ["url", "alt"]
+          }
         }
       },
-      "logo": {
-        "type": "string",
-        "format": "uri-template"
-      },
-      "images": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "url": {
-              "type": "string",
-              "format": "uri-template"
-            },
-            "alt": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "url",
-            "alt"
-          ]
-        }
-      }
-    },
-    "required": [
-      "name",
-      "id",
-      "address",
-      "location",
-      "email",
-      "phone",
-      "description",
-      "links",
-      "logo",
-      "images"
-    ]
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "id",
+        "address",
+        "location",
+        "email",
+        "phone",
+        "description",
+        "links",
+        "logo",
+        "images"
+      ]
+    }
   }
 }
