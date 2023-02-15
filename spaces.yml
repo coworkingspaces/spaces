@@ -1,4 +1,3 @@
-$schema: "./spaces.schema.json"
 spaces:
   - name: cobaas - Coworking Space Preetz
     id: de-preetz-cobaas
