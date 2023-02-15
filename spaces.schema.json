@@ -14,6 +14,19 @@
   "definitions": {
     "space": {
       "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "id",
+        "address",
+        "location",
+        "email",
+        "phone",
+        "description",
+        "links",
+        "logo",
+        "images"
+      ],
       "properties": {
         "name": {
           "type": "string"
@@ -26,6 +39,8 @@
         },
         "location": {
           "type": "object",
+          "additionalProperties": false,
+          "required": ["lat", "lon"],
           "properties": {
             "lat": {
               "type": "number",
@@ -37,8 +52,7 @@
               "minimum": -180,
               "maximum": 180
             }
-          },
-          "required": ["lat", "lon"]
+          }
         },
         "email": {
           "type": "string",
@@ -54,6 +68,8 @@
           "type": "array",
           "items": {
             "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "url"],
             "properties": {
               "name": {
                 "type": "string"
@@ -62,8 +78,7 @@
                 "type": "string",
                 "format": "uri-template"
               }
-            },
-            "required": ["name", "url"]
+            }
           }
         },
         "logo": {
@@ -74,6 +89,8 @@
           "type": "array",
           "items": {
             "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "alt"],
             "properties": {
               "url": {
                 "type": "string",
@@ -82,24 +99,10 @@
               "alt": {
                 "type": "string"
               }
-            },
-            "required": ["url", "alt"]
+            }
           }
         }
-      },
-      "additionalProperties": false,
-      "required": [
-        "name",
-        "id",
-        "address",
-        "location",
-        "email",
-        "phone",
-        "description",
-        "links",
-        "logo",
-        "images"
-      ]
+      }
     }
   }
 }
