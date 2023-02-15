@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
   "items": {
     "type": "object",
@@ -33,7 +33,8 @@
         ]
       },
       "email": {
-        "type": "string"
+        "type": "string",
+        "format": "email"
       },
       "phone": {
         "type": "string"
@@ -50,7 +51,8 @@
               "type": "string"
             },
             "url": {
-              "type": "string"
+              "type": "string",
+              "format": "uri-template"
             }
           },
           "required": [
@@ -60,7 +62,8 @@
         }
       },
       "logo": {
-        "type": "string"
+        "type": "string",
+        "format": "uri-template"
       },
       "images": {
         "type": "array",
@@ -68,7 +71,8 @@
           "type": "object",
           "properties": {
             "url": {
-              "type": "string"
+              "type": "string",
+              "format": "uri-template"
             },
             "alt": {
               "type": "string"
