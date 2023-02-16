@@ -1,0 +1,108 @@
+{
+  "title": "Co-working spaces list",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["spaces"],
+  "additionalProperties": false,
+  "properties": {
+    "spaces": {
+      "type": "array",
+      "minLength": 1,
+      "items": { "$ref": "#/definitions/space" }
+    }
+  },
+  "definitions": {
+    "space": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "id",
+        "address",
+        "location",
+        "email",
+        "phone",
+        "description",
+        "links",
+        "logo",
+        "images"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "location": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["lat", "lon"],
+          "properties": {
+            "lat": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "lon": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            }
+          }
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "url"],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri-template"
+              }
+            }
+          }
+        },
+        "logo": {
+          "type": "string",
+          "format": "uri-template"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "alt"],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri-template"
+              },
+              "alt": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

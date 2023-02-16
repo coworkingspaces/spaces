@@ -1,0 +1,113 @@
+spaces:
+  - name: cobaas - Coworking Space Preetz
+    id: de-preetz-cobaas
+    address: |
+      Baasberg 1
+      24211 Preetz
+    location:
+      lat: 54.2279307
+      lon: 10.2808406
+    email: info@cobaas.de
+    phone: "+491754177872"
+    description: |
+      Mal raus und den Kopf frei bekommen, nicht jeden Tag pendeln müssen
+      und in einer kreativen Umgebung arbeiten - das ist unser Angebot. Mobiles, temporäres
+      Arbeiten in der Holsteinischen Schweiz in unmittelbarer Nähe zum Kirchsee und
+      der Schwentine.
+    links:
+      - name: website
+        url: https://www.cobaas.de/
+      - name: instagram
+        url: https://www.instagram.com/cobaas_preetz/
+      - name: facebook
+        url: https://www.facebook.com/people/Cobaas-Coworking-Space-Preetz/100066414680880/
+      - name: linkedin
+        url: https://www.linkedin.com/company/cobaas-coworking-space-preetz/
+    logo: https://image.jimcdn.com/app/cms/image/transf/dimension=1040x10000:format=png/path/sedcf87c7f3e9fb47/image/ib0d0d7919f26ae32/version/1668766083/image.png
+    images:
+      - url: https://image.jimcdn.com/app/cms/image/transf/dimension=2048x2048:format=jpg/path/sedcf87c7f3e9fb47/image/i782d80b67a506847/version/1620979184/image.jpg
+        alt: Pavillions des cobaas Coworking Space Preetz
+  - name: Fleet7
+    id: de-kiel-fleet7
+    address: |
+      Fleethörn 7
+      24103 Kiel
+    location:
+      lat: 54.3216743
+      lon: 10.1314529
+    email: info@fleet7.de
+    phone: "+494319032230"
+    description: |
+      Das FLEET7 ist ein zentraler Coworking Space für Gründer, Startups
+      und Freelancer in Kiel. Auf ca. 2000 m² arbeitet eine junge Gründer-Community
+      in einer professionellen Umgebung an innovativen Geschäftsideen mit digitalem
+      Fokus.
+    links:
+      - name: website
+        url: https://www.fleet7.de/
+      - name: instagram
+        url: https://www.instagram.com/fleet7_kiel/
+      - name: facebook
+        url: https://www.facebook.com/fleetsieben
+      - name: linkedin
+        url: https://www.linkedin.com/company/fleet7/
+    logo: https://uploads-ssl.webflow.com/5c750b7433fbe06c5dfbee68/5c751f285492e19cdc64314e_logo-sm-orange.svg
+    images:
+      - url: https://uploads-ssl.webflow.com/5c750b7433fbe06c5dfbee68/5cf14f43bd44fd23dc93ae90_ZG-NEU-Stairs-p-1080.jpeg
+        alt: Eingangsbereich des Coworking Space Fleet7
+  - name: Cowork Nord - Kiel
+    id: de-kiel-coworknordkiel
+    address: |
+      Schauenburgerstraße 116
+      24118 Kiel
+    location:
+      lat: 54.3216771
+      lon: 10.1248869
+    email: kiel@coworknord.de
+    phone: "+4943156060"
+    description: |
+      Gemeinsam Arbeiten im Kieler Zentrum: Perfekt angebunden an die Veloroute
+      und Autobahn ermöglicht das Kieler Innovations- und Technologiezentrum (KITZ)
+      ein inspirierendes und angenehmes Arbeitsumfeld mit urbanem Flair.
+    links:
+      - name: website
+        url: http://www.coworknord.de/
+      - name: instagram
+        url: https://www.instagram.com/coworknord/
+      - name: facebook
+        url: https://www.facebook.com/coworknord
+      - name: linkedin
+        url: https://www.linkedin.com/company/coworknord/
+    logo: https://wfa.de/wp-content/uploads/CN_Logo_4C_Allgemein.jpg
+    images:
+      - url: https://coworknord.de/wp-content/uploads/2019/12/cowork-nord-coworking-kiel.jpg
+        alt: Eingangsbereich des Cowork Nord im KITZ
+  - name: ALTE MU Impuls - Werk e.V.
+    id: de-kiel-altemu
+    address: |
+      Lorentzendamm 6-8
+      24103 Kiel
+    location:
+      lat: 54.3270792
+      lon: 10.1392037
+    email: info@altemu.de
+    phone: "015781508693"
+    description: |
+      Du hast eine Projektidee und brauchst einen Raum, um sie umzusetzen?
+      Du bist Freelancer:in und suchst nach einem Coworking Space mit Schreibtisch für
+      dich? Du willst eine Küche und dazugehörigen Raum für deine Veranstaltung mieten?
+      In der ALTEN MU gibt es zahlreiche Möglichkeiten, einen Platz zu finden und zu
+      nutzen - sei es vorübergehend oder dauerhaft.
+    links:
+      - name: website
+        url: http://www.altemu.de/
+      - name: instagram
+        url: https://www.instagram.com/coworknord/
+      - name: facebook
+        url: https://www.facebook.com/coworknord
+      - name: linkedin
+        url: https://www.linkedin.com/company/coworknord/
+    logo: https://altemu.de/wp-content/themes/altemu-web/lib/img/altemu-logo.svg
+    images:
+      - url: https://coworknord.de/wp-content/uploads/2019/12/cowork-nord-coworking-kiel.jpg
+        alt: Eingangsbereich des Cowork Nord im KITZ
