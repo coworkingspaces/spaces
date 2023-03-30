@@ -5,8 +5,8 @@ spaces:
       Baasberg 1
       24211 Preetz
     location:
-      lat: 54.2279307
-      lon: 10.2808406
+      lat: 54.2280274
+      lon: 10.2814532
     email: info@cobaas.de
     phone: "+491754177872"
     description: |
@@ -34,7 +34,7 @@ spaces:
       24103 Kiel
     location:
       lat: 54.3216743
-      lon: 10.1314529
+      lon: 10.1336416
     email: info@fleet7.de
     phone: "+494319032230"
     description: |
@@ -61,8 +61,8 @@ spaces:
       Schauenburgerstraße 116
       24118 Kiel
     location:
-      lat: 54.3216771
-      lon: 10.1248869
+      lat: 54.3350669
+      lon: 10.1192215
     email: kiel@coworknord.de
     phone: "+4943156060"
     description: |
@@ -89,7 +89,7 @@ spaces:
       24103 Kiel
     location:
       lat: 54.3270792
-      lon: 10.1392037
+      lon: 10.1413924
     email: info@altemu.de
     phone: "015781508693"
     description: |
